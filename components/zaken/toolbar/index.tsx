@@ -5,8 +5,9 @@ import {
   SearchBox,
   Switch,
 } from "@fluentui/react-components";
-import { Add16Filled, Briefcase16Filled } from "@fluentui/react-icons";
+import { Briefcase16Filled } from "@fluentui/react-icons";
 import { useState } from "react";
+import { NewZakenForm } from "../form";
 
 const useStyles = makeStyles({
   container: {
@@ -48,9 +49,7 @@ function ZakenToolbar() {
         >
           <b>38</b>
         </CompoundButton>
-        <Button appearance="primary" icon={<Add16Filled />}>
-          Nieuw
-        </Button>
+        <NewZakenForm />
         <Switch
           checked={checked2}
           label={`Zaken`}
